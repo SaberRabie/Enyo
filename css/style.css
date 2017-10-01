@@ -1,5 +1,6 @@
 body{
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 .container{
   padding-top: 30px;
@@ -12,11 +13,10 @@ body{
 }
 /* Navigation */
 .navbar-toggler{
-  background-color: white;
+
 }
 .nav-item a{
   text-transform: capitalize;
-  font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
 }
@@ -105,25 +105,22 @@ body{
 }
 /* Header */
 .header{
-  margin-top:17%;
-  margin-bottom: 53em;
+  margin-top:7%;
+  margin-bottom: 25%;
 }
 .banner-img{
   position: absolute;
   top: 0;
   left: 0;
   z-index: -5;
-  width: 100%;
 }
 .header h1{
-  font-size: 91px;
   font-family: 'Oswald', sans-serif;
   color: #ffffff;
   padding-bottom: 30px;
 }
 .header p{
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
   color:#bbd8ff;
   font-weight: 400;
 }
@@ -145,18 +142,10 @@ body{
   padding-right: 10px;
 }
 /* Index */
-.over-head{
-  font-size: 10em;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 6px;
-  color: #ffffff;
-}
 .download-panel{
-  margin-top: -7em;
+
 }
 .download-panel h3{
-  font-size: 65px;
-  letter-spacing: -4px;
   color: #25365d;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -218,7 +207,6 @@ body{
   margin-top: 10em;
 }
 .features h2{
-  font-size: 65px;
   color: #25365d;
   margin-bottom: 1em;
   text-transform: uppercase;
@@ -227,7 +215,6 @@ body{
 
 }
 .plans h2{
-  font-size: 65px;
   color: #25365d;
   margin-bottom: 1em;
   text-transform: uppercase;
@@ -251,7 +238,6 @@ body{
   padding-bottom: 30px;
 }
 .box .price{
-  font-size: 68px;
   color: #25365d;
 }
 .support{
@@ -271,22 +257,20 @@ body{
   color: #25365d;
 }
 /* Footer */
-.footer{
+footer{
   margin-top: 10em;
 }
-.footer h2{
-  letter-spacing: -2px;
-  font-size: 65px;
+footer h2{
   color: #25365d;
   margin-bottom: 1em;
   text-transform: uppercase;
   text-align: center;
 }
-.footer p{
+footer p{
   text-align: center;
   color: #5a5a5a;
 }
-.footer button{
+footer .btn{
   background-color: #25365d;
   color: #ffffff;
   height: 45px;
@@ -298,11 +282,11 @@ body{
   text-transform: capitalize;
   font-weight: bold;
 }
-.footer button i{
+footer .btn i{
   color: #7f97be;
   padding-right: 10px;
 }
-.footer img{
+footer img{
   width: 100%;
 }
 
@@ -311,6 +295,10 @@ body{
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 300px) and (max-width: 767px) {
   /* Nav search form */
+  body{
+    background-color: #008CCE;
+    padding-bottom: 30px;
+  }
   .mobile-search{
     display: inline-block;
   }
@@ -326,6 +314,18 @@ body{
     width: 100%;
   }
   /*                  */
+  .banner-img{
+    display: none;
+  }
+  .download-panel img{
+    display: none;
+  }
+  .plans .box{
+    margin-bottom: 30px;
+  }
+  footer img{
+    display: none;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -341,10 +341,7 @@ body{
   }
   /*        header          */
   .header{
-    margin:0px;
-  }
-  .header h1{
-    font-size: 30px;
+    margin-top: auto;
   }
 }
 
