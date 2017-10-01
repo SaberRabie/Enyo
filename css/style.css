@@ -212,6 +212,9 @@ body{
   margin-bottom: 1em;
   text-transform: uppercase;
 }
+.features img{
+  max-width: 100%;
+}
 .plans{
 
 }
